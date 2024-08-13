@@ -145,13 +145,13 @@ const departmentList = [
 
 //4 - Desenvolva uma função chamada howManyEmployeesInDepartment que recebe o nome do departamento como parâmetro e verifica quantos funcionários estão naquele departamento. Caso o departamento não seja encontrado, retornar: "Departament not found".
 
-// function howManyEmployeesInDepartment(departmentName) {
-//     for (let i = 0; i < departmentList.length; i++) {
-//         if (departmentList[i].departmentName === departmentName) {
-//             return departmentList[i].employees.length;
-//         }
-//     }
-//     return "Department not found";
+function howManyEmployeesInDepartment(departmentName) {
+    for (let i = 0; i < departmentList.length; i++) {
+        if (departmentList[i].departmentName === departmentName) {
+            return departmentList[i].employees.length;
+        }
+    }
+    return "Department not found";
     
 // }
 // console.log(howManyEmployeesInDepartment('Financial'))
