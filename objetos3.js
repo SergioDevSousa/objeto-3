@@ -153,8 +153,8 @@ function howManyEmployeesInDepartment(departmentName) {
     }
     return "Department not found";
     
-// }
-// console.log(howManyEmployeesInDepartment('Financial'))
+}
+console.log(howManyEmployeesInDepartment('Financial'))
 
 //5 - Desenvolva uma função chamada insertNewEmployeeInDepartment que consiga adicionar um novo funcionário ao departamento. A função deve receber o nome do departamento como parâmetro e um objeto pessoa com:
 // name, uma variável do tipo string
