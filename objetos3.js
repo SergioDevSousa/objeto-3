@@ -163,23 +163,23 @@ const departmentList = [
 // salary, uma variável do tipo number
 
 
-// function insertNewEmployeeInDepartment(departmentName, newEmployee){
-//     for(let i = 0; i < departmentList.length; i++){
-//         if( departmentList[i].departmentName === departmentName){
-//             departmentList[i].employees.push(newEmployee);
-//             return `Funcionário ${newEmployee.name} adicionado para ${departmentName}`
-//         }
+function insertNewEmployeeInDepartment(departmentName, newEmployee){
+    for(let i = 0; i < departmentList.length; i++){
+        if( departmentList[i].departmentName === departmentName){
+            departmentList[i].employees.push(newEmployee);
+            return `Funcionário ${newEmployee.name} adicionado para ${departmentName}`
+        }
         
-//     }
-//     return 'Department not found';
+    }
+    return 'Department not found';
     
-// }
-// const newEmployee = {
-//     name: 'Rosimery',
-//     age: 44,
-//     responsibility: 'Financial expedition director',
-//     salary: 15600
-// };
+}
+const newEmployee = {
+    name: 'Rosimery',
+    age: 44,
+    responsibility: 'Financial expedition director',
+    salary: 15600
+};
 
-// const result = insertNewEmployeeInDepartment('Financial', newEmployee);
-// console.log(result);
+const result = insertNewEmployeeInDepartment('Financial', newEmployee);
+console.log(result);
